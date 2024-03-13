@@ -32,20 +32,25 @@ Se deben mostrar los detalles de todos los juegos que incluye el club.
 
 Vista de buscador: 
 En esta sección el usuario debe encontrar una barra de búsqueda que le permita ingresar el nombre del juego que quiere buscar y al ejecutar la búsqueda, deben aparecer los juegos que coincidan con dicho criterio.
+
 Registro de usuarios:
 Los usuarios deben poder registrarse en la página web proporcionando su nombre, apellido, nombre de usuario, email, contraseña y videojuego preferido. El videojuego preferido debe ser uno de los registrados en base de datos.
 La información del usuario debe almacenarse en la base de datos de Firebase Firestore.
+
 Acceso a los juegos del club:
 Los usuarios registrados deben poder acceder a los juegos que ofrece el club de videojuegos.
 Se deben mostrar los juegos disponibles junto con su información, como nombre, género y descripción.
+
 Gestión de clubes:
 Los usuarios deben poder unirse a un club existente.
 Para unirse a un club, un usuario debe solicitar una afiliación (membresía) entrando a la página del club y presionando el botón de suscripción.
 La información de la membresía, relacionando el ID del club con el usuario, debe almacenarse en la base de datos.
+
 Perfil de usuario:
 Los usuarios deben poder acceder a su perfil para ver y modificar su información personal.
 Deben poder editar su nombre, apellido y videojuego preferido.
 Los usuarios deben poder retirarse de un club al que están afiliados.
+
 Interfaz de usuario:
 La aplicación debe tener una interfaz de usuario clara y fácil de usar.
 La interfaz debe ser responsive, adaptándose a diferentes dispositivos como teléfonos móviles, tabletas y computadoras de escritorio.
@@ -55,51 +60,11 @@ Se debe utilizar Firebase como plataforma de desarrollo y Firestore como base de
 La aplicación debe ser capaz de leer y escribir datos en la base de datos de Firestore.
 
 
-CONDICIONES DE ENTREGA
-Control de versiones y alojamiento
-Utilizar git para el control de versiones del proyecto.
-Subir el proyecto a un repositorio de GitHub. Se debe evidenciar la participación de ambos integrantes.
-Debe utilizar React como librería de desarrollo web.
-Debe utilizar React Router o librerías similares para habilitar la navegación por URL dentro del sistema.
-Debe utilizar los componentes de Firebase para alojar el sistema:
-Publicar la página web utilizando Firebase Hosting. 
-Gestionar el inicio de sesión y registro con Firebase Auth.
-Todos los datos de la página (usuarios, clubes y membresías) deben almacenarse en una base de datos Cloud Firestore. Recuerde que no se deben guardar contraseñas en esta base de datos
-Entrega
-La actividad es en parejas, cualquier intento de plagio será penalizado con 0
-El micro-proyecto comienza el día viernes a las 9:00 a.m. y finaliza a las 11:59 p.m. el día domingo. Por lo tanto, su entrega deberá ser hecha dentro de ese tiempo.
-Debe enviar lo siguiente:
-Link del repositorio con el proyecto
-Link de la página publicada con Firebase Hosting
-Al correo de su respectivo preparador:
-goncalves.andres@correo.unimet.edu.ve (sección 1)
-michelle.villegas@correo.unimet.edu.ve (sección 2)
-sergio.suarez@correo.unimet.edu.ve (sección 3)
-Evaluación
-Estructura de componentes de React: 1 pto
-Responsive: 1 pts
-Estructura del Router: 1 pto
-Funcionalidad: (10 pts)
-Registro de nuevos usuarios e inicio de sesión: 2 pts
-Gestión correcta de la membresía (creación y retiro): 2 pts
-Mostrar información de los clubes: 2 pts
-Buscador de juegos: 2 pts
-Página de perfil: 2 pts
-Configuración de Firebase: (4 pts)
-Autenticación con correo y contraseña: 1pto
-Autenticación con otro proveedor (Google, Facebook…): 1 pto
-Base de datos Firestore: 2 pts
-Apreciación (esfuerzo y estética): 3 pts
-En caso de que el proyecto no esté alojado en Firebase Hosting, se evaluará con una puntuación máxima de 10 puntos.
-
-
-
 Datos Precargados
 	Para ahorrar tiempo de desarrollo, se deben cargar estos datos iniciales sobre videojuegos y clubes manualmente en la base de datos, de modo que el sistema cuente con información para poder crear membresías.
 
 
 Videojuegos
-
 
 [
    {
